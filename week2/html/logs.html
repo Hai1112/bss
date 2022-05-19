@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/logs.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/logs.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <title>Document</title>
+      </head>
+      <body>
+        <div class="container">
+          <div class="sidebar">
+            <div class="sidebar_header">
+              <i class="sidebar_header-icon fa-solid fa-desktop"></i>
+              Device Manager
+            </div>
+            <div class="sidebar_user">
+              <i class="topbar-icon fa-solid fa-circle-user"></i>
+              Welcome John
+            </div>
+            <ul class="sidebar_menu">
+              <li class="sidebar_item">
+                <a href="dashboard.html">
+                  <i class="sidebar_item-icon fa-solid fa-bars-staggered"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="sidebar_item">
+                <i class="sidebar_item-icon fa-solid fa-clock-rotate-left"></i>
+                Logs
+              </li>
+              <li class="sidebar_item">
+                <i class="sidebar_item-icon fa-solid fa-gear"></i>
+                Settings
+              </li>
+            </ul>
+          </div>
+          <div class="main">
+            <div class="topbar">
+              <i class="topbar-icon fa-solid fa-circle-user"></i>
+              Welcome John
+            </div>
+            <div class="content">
+              <div class="wrapper">
+                <div class="header">
+                  <h3 class="title">Action Logs</h3>
+                  <div class="search_wrapper">
+                    <input
+                      class="search_input"
+                      type="text"
+                      id="search_input"
+                      placeholder="search..."
+                    />
+                    <button class="search_button" id="search_button">
+                      Search
+                    </button>
+                  </div>
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Device ID</th>
+                      <th>Name</th>
+                      <th>Action</th>
+                      <th>Power Consumption</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <div class="pagination" id="pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="../js/logs.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

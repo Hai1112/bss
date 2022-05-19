@@ -1,0 +1,44 @@
+.sidebar {
+  min-height: 100vh;
+  flex: 1;
+  border-right: 1px solid gray;
+  padding: 10px;
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    .headerIcon {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+  }
+  .user {
+    display: none;
+  }
+  .list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    .item {
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      margin: 0 0 8px 30px;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: aliceblue;
+        color: #6dabf5;
+      }
+      a {
+        display: flex;
+        align-items: center;
+      }
+      .itemIcon {
+        font-size: 20px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
