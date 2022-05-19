@@ -34,10 +34,46 @@
       a {
         display: flex;
         align-items: center;
+        outline: none;
       }
       .itemIcon {
         font-size: 20px;
         margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -200px;
+    background-color: white;
+    width: 200px;
+    transition: all 0.5s ease;
+    &.show {
+      left: 0;
+    }
+    .header {
+      display: none;
+    }
+    .user {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      margin-top: 10px;
+      .userIcon {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+    }
+    .list {
+      .item {
+        margin-left: 16px;
       }
     }
   }

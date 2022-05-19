@@ -1,0 +1,67 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px 40px;
+    .inputWrapper {
+      width: 70%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      .input {
+        padding: 16px;
+        border: none;
+        outline: none;
+        background-color: #f9f4f4;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .errorMessage {
+        margin-left: 4px;
+        font-size: 14px;
+        color: red;
+      }
+    }
+    .formAction {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .loginButton {
+        padding: 12px 30px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        margin-right: 12px;
+        font-weight: bold;
+        color: white;
+        background-color: #f28e19;
+      }
+      .register {
+        color: #6dabf5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    .form {
+      width: 90%;
+      height: 45%;
+      .inputWrapper {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,19 +1,22 @@
 .container {
   display: flex;
+  position: relative;
+  .menuButton {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    background-color: white;
+    border-radius: 4px;
+    .menuIcon {
+      font-size: 40px;
+    }
+  }
   .main {
     flex: 6;
-    .topBar {
-      height: 50px;
-      border-bottom: 1px solid gray;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding-right: 16px;
-      .userIcon {
-        font-size: 28px;
-        margin-right: 8px;
-      }
-    }
     .content {
       padding: 50px 80px;
       background-color: rgba(0, 0, 0, 0.1);
@@ -59,19 +62,20 @@
           margin-left: 10px;
           .formInput {
             width: 60%;
-            margin-top: 20px;
+            margin-top: 30px;
             display: flex;
             flex-direction: column;
             .input {
               width: 100%;
-              padding: 10px;
+              padding: 16px;
               outline: none;
               border: none;
+              border-radius: 8px;
               background-color: #f9f4f4;
             }
             .errorMessage {
               color: red;
-              font-size: 12px;
+              font-size: 13px;
               margin-left: 4px;
             }
           }
@@ -85,6 +89,36 @@
             color: white;
             font-weight: bold;
             cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    .menuButton {
+      visibility: visible;
+    }
+    .main {
+      .content {
+        padding: 20px;
+        .table {
+          display: none;
+        }
+        .wrapper {
+          flex-direction: column;
+          .chart,
+          .form {
+            width: 100%;
+            margin: 20px 0 0 0;
+          }
+          .form {
+            padding: 20px;
+            .formInput {
+              width: 100%;
+            }
           }
         }
       }

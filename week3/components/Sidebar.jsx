@@ -1,16 +1,16 @@
 import styles from "../styles/Sidebar.module.scss";
 import Link from "next/link";
 
-const Sidebar = () => {
+const Sidebar = ({ openMenu }) => {
   return (
-    <div className={styles.sidebar}>
+    <div className={`${styles.sidebar} ${openMenu ? styles.show : null}`}>
       <div className={styles.header}>
         <i className={`${styles.headerIcon} fa-solid fa-desktop`}></i>
         <span className={styles.headerText}>Device Manager</span>
       </div>
       <div className={styles.user}>
         <i className={`${styles.userIcon} fa-solid fa-circle-user`}></i>
-        <span className={styles.userText}>Welcome</span>
+        <span className={styles.userText}>Welcome John</span>
       </div>
       <ul className={styles.list}>
         <li className={styles.item}>

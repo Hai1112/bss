@@ -123,7 +123,7 @@ searchButton.addEventListener("click", function () {
   let searchResult = [];
   if (searchInput.value) {
     devices.forEach((device) => {
-      if (device.name === searchInput.value) {
+      if (device.name.toLowerCase() === searchInput.value.toLowerCase()) {
         searchResult.push(device);
       }
     });
