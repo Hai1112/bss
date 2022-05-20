@@ -17,6 +17,18 @@
   }
   .main {
     flex: 6;
+    .topBar {
+      height: 50px;
+      border-bottom: 1px solid gray;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 16px;
+      .userIcon {
+        font-size: 28px;
+        margin-right: 8px;
+      }
+    }
     .content {
       padding: 50px 80px;
       background-color: rgba(0, 0, 0, 0.1);
@@ -102,8 +114,12 @@
       visibility: visible;
     }
     .main {
+      .topBar {
+        display: none;
+      }
       .content {
         padding: 20px;
+        min-height: 100vh;
         .table {
           display: none;
         }
